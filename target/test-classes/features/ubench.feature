@@ -10,9 +10,22 @@ Feature:
     * Press continue button
     * Enter name
     * Enter lastname
-    * Enter invalid "<e-mail>"
+    * Enter "<e-mail>"
     * Enter phone
-    * Press continue button
+    * Press continue button and quit
 
     Examples:
     |e-mail|
+    |birol.cetin@example.com|
+    |disposable.style.email.with+symbol@example.com|
+    |other.email-with-dash@example.com|
+    |fully-qualified-domain@example.com|
+    |x@example.com|
+    |example-indeed@strange-example.com|
+    |example@s.solution|
+    |admin@mailserver1|
+    |user@localserver|
+    |user@[IPv6:2001:DB8::1]|
+    |user@tt|
+
+

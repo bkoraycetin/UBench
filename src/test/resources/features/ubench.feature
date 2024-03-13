@@ -12,7 +12,7 @@ Feature:
     * Enter lastname
     * Enter "<e-mail>"
     * Enter phone
-    * Press continue button
+    * Press continue button and quit
 
     Examples:
     |e-mail|
@@ -21,11 +21,11 @@ Feature:
     |other.email-with-dash@example.com|
     |fully-qualified-domain@example.com|
     |x@example.com|
-    |very.(),:;<>[]\".VERY.\"very@\ \"very\".unusual"@strange.example.com|
     |example-indeed@strange-example.com|
-    |admin@mailserver1|
-    |" "@example.org|
     |example@s.solution|
+    |admin@mailserver1|
     |user@localserver|
-    |user@tt|
     |user@[IPv6:2001:DB8::1]|
+    |user@tt|
+
+

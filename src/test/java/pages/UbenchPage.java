@@ -22,11 +22,11 @@ public class UbenchPage {
     @FindBy (xpath = "//input[@name='location']")
     public WebElement locationBox;
 
-    @FindBy (id = "mantine-bgm6584o9")
+    @FindBy (name = "date")
     public WebElement dateBox;
 
 
-    @FindBy (xpath = "//div[@class='mantine-x78oh3 mantine-TimeInput-controls']")
+    @FindBy (xpath = "//div[@placeholder='Time of accident']")
     public WebElement timeBox;
 
 
@@ -35,7 +35,8 @@ public class UbenchPage {
     public WebElement nameBox;
 
 
-
+    @FindBy (xpath = "//h2[normalize-space()='Third Party']")
+    public  WebElement assertionElement;
 
     @FindBy (xpath = "//input[@name='driver.lastName']")
     public WebElement lastNameBox;

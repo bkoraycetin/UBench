@@ -21,16 +21,18 @@ public class Hooks {
             } catch (WebDriverException e) {
                 e.printStackTrace();
             }
+            finally {
+                utilites.Driver.getDriver().quit();
+            }
         }
         }
-}
 
 
 
-/*
+
+
     @After
     public void tearDown(Scenario scenario){
-//        System.out.println("This is after method");
         final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
         scenario.attach(screenshot,"image/png","screenshots");
-    }}*/
+    }}
